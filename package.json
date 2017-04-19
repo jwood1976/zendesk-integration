@@ -1,0 +1,16 @@
+{
+  "name": "@spredfast/zendesk-app-note",
+  "version": "1.0.0",
+  "description": "Example of Notifications service to submit Zendesk tickets",
+  "main": "zendesk-notifier.js",
+  "scripts": {
+    "start": "node zendesk-notifier.js"
+  },
+  "author": "Spredfast",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "request": "^2.81.0"
+  }
+}

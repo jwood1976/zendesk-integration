@@ -1,0 +1,41 @@
+{
+  "name": "Spredfast Zendesk Integration",
+  "description": "Example of Spredfast Notifications service integration",
+  "repository": "https://github.com/spredfast/zendesk-integration.git",
+  "logo": "https://raw.githubusercontent.com/spredfast/zendesk-integration/master/sflogo.png",
+  "keywords": ["spredfast"],
+  "env": {
+    "HEROKU_APP_NAME": {
+      "description": "Heroku app name. Copy verbatim from App Name (optional) above",
+      "required": true
+    },
+    "SPREDFAST_API_TOKEN": {
+      "description": "Spredfast API Access Token obtained from https://apiexplorer.spredfast.com",
+      "required": true
+    },
+    "SPREDFAST_COMPANY_ID": {
+      "description": "Spredfast directory company id obtained from https://apiexplorer.spredfast.com",
+      "required": true
+    },
+    "SPREDFAST_LABEL_NAME": {
+      "description": "Label name that will create a case when applied to a stream item",
+      "required": true
+    },
+    "ZENDESK_APP_URL": {
+      "description": "URL of your ZenDesk Instance. Example: https://mycompany.zendesk.com",
+      "required": true
+    },
+    "ZENDESK_USER_EMAIL": {
+      "description": "Zendesk User Email Address",
+      "required": true
+    },
+    "ZENDESK_API_TOKEN": {
+      "description": "Zendesk API Access Token",
+      "required": true
+    },
+    "NOTIFIER_BEARER_TOKEN": {
+      "description": "Random bearer token for Spredfast subscription, do not modify",
+      "generator": "secret"
+    }
+  }
+}
