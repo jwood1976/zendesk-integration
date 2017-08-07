@@ -34,7 +34,7 @@ var zendeskUrl = `${ZendeskAppUrl}/api/v2/tickets/create_many.json`;
 
 var entity= {
   companyId: SpredfastCompanyId,           // Your company ID on Spredfast
-  externalId: "send-to-zendesk",           // Your unique name for your subscription
+  externalId: "send-to-zendesk-2",           // Your unique name for your subscription
   eventName: "stream-item-label-applied",  // The Spredfast event you're subscribing to
   notificationUri: herokuUrl,              // The URL of this Heroku app
   query: SpredfastLabelName,               // The Spredfast label to watch for
